@@ -1,0 +1,57 @@
+.landing-page{
+    position: relative;
+    min-height: inherit;
+    background: green;
+    display: grid;
+    grid-template-columns:0.15fr 1fr ;
+    grid-template-rows: 1fr ;
+}
+.menubar-icon{
+    display: none;
+}
+.sidebar-container{
+grid-column: 1/2;
+grid-row: 1/2;
+background-color: gray;
+}
+
+.content-container{
+grid-column:2/3;
+grid-row: 1/2;
+background-color: rgb(21, 180, 188);
+}
+
+@media screen and (max-width:1024px) {
+    .landing-page{
+     grid-template-columns:minmax(100px,150px) minmax(0px,1fr) ;
+}
+.sidebar-container{
+    background-color:yellow;
+}
+}
+
+@media screen and (max-width:600px) {
+    .landing-page{
+    display: block;
+    background-color: rgb(237, 36, 36);
+}
+.sidebar-container{
+    display: none;
+}
+.sidebar-container.show-sidebar{
+    display: flex;
+    height:90dvh;
+    width: 40%;
+    box-shadow: 0px 0px 4px 2px rgba(231, 228, 228, 0.35);
+}
+.menubar-icon{
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    display: block;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+}
+
