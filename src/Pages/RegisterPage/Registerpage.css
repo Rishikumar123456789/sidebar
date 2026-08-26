@@ -1,0 +1,70 @@
+.register-page{
+    width: 100%;
+    height: 100dvh;
+    background-color: #66A3BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layout-container{
+    width: 60%;
+    height: 80%;
+    border-radius: 2px;
+    background-color: rgba(42, 156, 156, 0.388);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    box-shadow: 0px 0px 2px 2px white;
+}
+.image-container{
+     border-radius: inherit;
+      overflow: hidden;
+          width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+.doctor-image{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.register-container{
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* this is the media query for tab and mobile*/
+@media screen and (max-width:1024px){
+    .layout-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-container{
+   display: none;
+}
+    .register-container {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        background-image:linear-gradient(rgba(0, 40, 40, 0.55),rgba(0, 40, 40, 0.55)),url("../../Assets/Images/veterinary-doctor.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
